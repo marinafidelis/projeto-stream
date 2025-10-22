@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Streamix</title>
+    <link rel="icon" href="/imagens/logotipo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <header>
+        <nav class="topo">
+
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <h1 class="sr-only">Streamix</h1>
+
+            <img src="/imagens/logotipo.png" alt="Streamix" class="logo">
+
+            <form class="pesquisa" role="search" aria-label="Pesquisar no feed">
+                <label for="busca" class="buscar">Pesquisar</label>
+                <input type="text" id="busca" name="busca" placeholder="Pesquisar" />
+            </form>
+
+        </nav>
+    </header> 
+
+    <aside class="menu-lateral">
+
+        <section class="menu-principal">
+            <h3 class="principal">Principal</h3>
+
+            <ul>
+                <li><a href="explorar.html">Explorar</a></li>
+                <li><a href="mensagem.html">Mensagens</a></li>
+                <li><a href="#">Salvos</a></li>
+                <li><a href="#">Minhas Curtidas</a></li>
+            </ul>
+        </section>
+
+        <section class="menu-configuracao">
+            <h3 class="configuracao">Configuração</h3>
+
+            <ul>
+                <li><a href="senha.html">Mudar senha</a></li>
+                <li><button id="btn-modo">🌙</button></li>
+            </ul>
+        </section>
+
+        <section class="criar">Postar</section>
+
+    </aside>
+
+    <main class="feed">
+
+        <section class="formulario-post">
+            <form action="#" method="post">
+                <img src="/Imagens/usuario1.jpeg" alt="foto de usuario" class="imagem-usuario">
+                <textarea name="texto" placeholder="O que está acontecendo?" required></textarea>
+                <button type="submit">Postar</button>
+
+            </form>
+
+        </section>
+
+        <article class="post">
+            <header class="post-header">
+                <img src="" alt="Foto do usuário" class="foto-usuario">
+                <h2 class="nome-usuario"></h2>
+            </header>
+
+            <p class="descricao">texto</p>
+
+            <div class="midia">
+                <img src="" alt="algo">
+            </div>
+
+            <footer class="acoes">
+                <button>❤️</button>
+                <button>💬</button>
+                <button>🔄</button>
+            </footer>
+
+        </article>
+
+    </main> 
     
+    <footer class="rodape">
+        <p>&copy; 2025 Streamix </p>
+    </footer>
+
 </body>
 </html>
